@@ -1,0 +1,91 @@
+Write a program to find the maximum element in an array.
+
+Input Format
+
+Integer corresponds to the size of the array. Read n elements line by line
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print maximum value
+
+Sample Input 0
+
+5
+1
+2
+33
+4
+5
+Sample Output 0
+
+33
+Sample Input 1
+
+3
+10
+210
+90
+Sample Output 1
+
+210
+Submissions: 685
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+int 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int n;
+10
+        n=s.nextInt();
+11
+        int a[]=new int[n];
+12
+        for(int i=0;i<n;i++)
+13
+        {
+14
+           a[i]=s.nextInt();
+15
+        }
+16
+        int large=a[0];
+17
+        for(int i=1;i<n;i++)
+18
+        {
+19
+           if(large<a[i])
+20
+             large=(int)a[i];
+21
+        }
+22
+        System.out.println(large);
+23
+    }
+24
+}
