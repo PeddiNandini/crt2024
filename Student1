@@ -1,0 +1,15 @@
+import java.util.*;
+class Student1
+{
+int a=10,b=20;
+void show(int a,int b)
+{
+System.out.println(a+b);
+System.out.println(this.a+this.b);
+}
+public static void main(String args[])
+{
+Student1 s1=new Student1();
+s1.show(100,200);
+}
+}
