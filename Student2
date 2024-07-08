@@ -1,0 +1,28 @@
+import java.util.*;
+class Student1
+{
+int admno,math,phy,che;
+String name;
+Student1(int admno,String name,int math,int phy,int che)
+{
+this.admno=admno;
+this.name=name;
+this.math=math;
+this.phy=phy;
+this.che=che;
+}
+void show()
+{
+System.out.println(this.admno+" "+this.name+" "+this.math+" "+this.phy+" "+this.che);
+}
+}
+class Student2
+{
+public static void main(String args[])
+{
+Student1 s1=new Student1(111,"aaa",99,88,89);
+s1.show();
+Student1 s2=new Student1(222,"bbb",98,86,99);
+s2.show();
+}
+}
