@@ -1,0 +1,25 @@
+import java.util.*;
+class Student1
+{
+int admno;
+String name;
+Student1(int x,String y)
+{
+admno=x;
+name=y;
+}
+void show()
+{
+System.out.println(admno+" "+name);
+}
+}
+class Student
+{
+public static void main(String args[])
+{
+Student1 s1=new Student1(111,"aaa");
+s1.show();
+Student1 s2=new Student1(222,"bbb");
+s2.show();
+}
+}
