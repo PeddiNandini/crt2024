@@ -1,0 +1,13 @@
+import java.util.*;
+class Test6
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String s1="java";
+if(s1.isLowerCase())
+{
+System.out.println(s1);
+}
+}
+}
