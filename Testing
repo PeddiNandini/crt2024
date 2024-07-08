@@ -1,0 +1,28 @@
+class Employee
+{
+int empno;
+String empname;
+int salary;
+void get(int x,String y,int z)
+{
+empno=x;
+empname=y;
+salary=z;
+}
+void show()
+{
+System.out.println(empno+" "+empname+" "+salary);
+}
+}
+class Testing
+{
+public static void main(String[] args)
+{
+Employee e1=new Employee();
+Employee e2=new Employee();
+e1.get(12,"xxx",54);
+e2.get(13,"yyy",65);
+e1.show();
+e2.show();
+}
+}
