@@ -1,0 +1,19 @@
+class Vararg1
+{
+void add(int...a)
+{
+int r=0;
+for(int x:a)
+{
+r=r+x;
+}
+System.out.println(r);
+}
+public static void main(String args[])
+{
+Vararg1 v1=new Vararg1();
+v1.add();
+v1.add(12,23,34);
+v1.add(10,20,30,40);
+}
+}
