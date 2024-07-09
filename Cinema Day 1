@@ -1,0 +1,81 @@
+There is a practice of showing a cinema in the auditorium of a college on a cinema day. A cinema day is a day where the sum of Day(D), Month(M), Year(Y)should be divisible by product of 3 and 4. On that particular day the total number of students in the hostel should be greater than 50 but less than 100. Write a program to find whether the given day is cinema day or not.
+
+Input Format
+
+Read day,month,year and number of students
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print Cinema Day or Not a Cinema Day
+
+Sample Input 0
+
+3 
+3 
+1914 
+76
+Sample Output 0
+
+Cinema Day
+Submissions: 287
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+    int d,m,y,n; 
+9
+    Scanner s=new Scanner(System.in);
+10
+    d=s.nextInt();
+11
+    m=s.nextInt();
+12
+    y=s.nextInt();
+13
+    n=s.nextInt();
+14
+    int sum=(int)d+m+y; 
+15
+    int product=(int)3*4; 
+16
+    if(sum%product==0&&n>50&&n<100) 
+17
+    {
+18
+        System.out.println("Cinema Day\n"); 
+19
+    } 
+20
+    else 
+21
+    { 
+22
+        System.out.println("Not a Cinema Day\n"); 
+23
+    }
+24
+  }
+25
+}
