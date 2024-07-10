@@ -1,0 +1,13 @@
+final class Second
+{
+}
+class Second extends First
+{
+}
+class Test1
+{
+public static void main(String args[])
+{
+Second s1=new Second();
+}
+}
