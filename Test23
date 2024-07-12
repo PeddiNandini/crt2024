@@ -1,0 +1,10 @@
+import java.util.*;
+class Test23
+{
+public static void main(String args[])
+{
+System.out.println(10/2);
+int a[]={34,53,23};
+System.out.println(a[5]);
+}
+}
