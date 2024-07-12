@@ -1,0 +1,10 @@
+import java.util.*;
+class Test24
+{
+public static void main(String args[])throws InterruptedException
+{
+System.out.println("Java");
+Thread.sleep(5000);
+System.out.println("Python");
+}
+}
